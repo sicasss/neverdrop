@@ -1,43 +1,43 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { 
   Moon, 
-  Gauge, 
+  Swords, 
   Feather, 
   Palette, 
   Settings2, 
-  Sparkles 
+  Target 
 } from 'lucide-react';
 
 const features = [
   {
     icon: Moon,
     title: 'Full Lunar Client Compatibility',
-    description: 'Seamlessly integrates with Lunar Client without conflicts or performance issues.'
+    description: 'Seamlessly integrates with Lunar Client for smooth, optimized performance with full access to exclusive features.'
   },
   {
-    icon: Gauge,
-    title: 'Performance Boosting Tools',
-    description: 'Advanced optimization techniques to maximize your FPS and reduce lag spikes.'
+    icon: Swords,
+    title: 'Advanced Combat Tools',
+    description: 'Gain a competitive edge with tools that enhance your combat and movement gameplay.'
   },
   {
     icon: Feather,
-    title: 'Lightweight Architecture',
-    description: 'Minimal memory footprint designed to run smoothly on any system.'
+    title: 'Lightweight Design',
+    description: 'A streamlined experience for those who want efficiency without the bloat of larger clients.'
   },
   {
     icon: Palette,
-    title: 'Visual Customization Modules',
-    description: 'Extensive visual options to personalize your Minecraft experience.'
+    title: 'Visual Customization',
+    description: 'Extensive visual options to personalize your Minecraft experience to your unique style.'
   },
   {
     icon: Settings2,
-    title: 'Control Tweaks',
-    description: 'Fine-tune your controls and keybindings for optimal gameplay.'
+    title: 'Diverse Modules',
+    description: 'From performance boosts to visual customizations and control adjustments, NeverDrop has it all.'
   },
   {
-    icon: Sparkles,
-    title: 'Smooth & Stable Experience',
-    description: 'Rock-solid stability with smooth animations and transitions.'
+    icon: Target,
+    title: 'Competitive Advantage',
+    description: 'Built for players seeking to enhance their performance without sacrificing game stability.'
   }
 ];
 
@@ -61,7 +61,7 @@ export const FeaturesSection = () => {
             Everything You <span className="text-primary">Need</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Packed with powerful features designed to enhance your gameplay without compromising integrity.
+            Packed with powerful features designed to enhance your gameplay experience.
           </p>
         </div>
 

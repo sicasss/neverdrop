@@ -1,4 +1,4 @@
-import { Download, ChevronDown, Sparkles } from 'lucide-react';
+import { ShoppingCart, ChevronDown, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const HeroSection = () => {
@@ -35,7 +35,7 @@ export const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-fade-up">
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm text-primary font-medium">For Minecraft 1.8.9 • Lunar Client</span>
+            <span className="text-sm text-primary font-medium">Ghost Client for Minecraft 1.8.9 • Lunar Client</span>
           </div>
 
           {/* Main Title */}
@@ -46,13 +46,13 @@ export const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-4 animate-fade-up stagger-2">
-            Lightweight Performance & Customization Mod
+            Lightweight & Powerful Ghost Client
           </p>
 
           {/* Description */}
           <p className="text-sm md:text-base text-muted-foreground/70 max-w-2xl mb-10 animate-fade-up stagger-3">
-            Elevate your Minecraft experience with optimized performance, visual enhancements, 
-            and seamless Lunar Client integration.
+            Enhance your performance and customization with advanced modules designed exclusively for 
+            Lunar Client. Undetectable, lightweight, and built for competitive players.
           </p>
 
           {/* CTA Buttons */}
@@ -62,8 +62,8 @@ export const HeroSection = () => {
               onClick={() => scrollToSection('#pricing')}
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg font-semibold glow-border animate-pulse-glow"
             >
-              <Download className="w-5 h-5 mr-2" />
-              Download Now
+              <ShoppingCart className="w-5 h-5 mr-2" />
+              Buy Now
             </Button>
             <Button
               size="lg"
@@ -78,8 +78,8 @@ export const HeroSection = () => {
           {/* Stats preview */}
           <div className="flex flex-wrap justify-center gap-8 mt-16 animate-fade-up stagger-5">
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-foreground">25K+</div>
-              <div className="text-sm text-muted-foreground">Downloads</div>
+              <div className="text-2xl md:text-3xl font-bold text-foreground">Undetected</div>
+              <div className="text-sm text-muted-foreground">Status</div>
             </div>
             <div className="w-px h-12 bg-border hidden sm:block" />
             <div className="text-center">
@@ -88,8 +88,8 @@ export const HeroSection = () => {
             </div>
             <div className="w-px h-12 bg-border hidden sm:block" />
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-foreground">99%</div>
-              <div className="text-sm text-muted-foreground">Uptime</div>
+              <div className="text-2xl md:text-3xl font-bold text-foreground">24/7</div>
+              <div className="text-sm text-muted-foreground">Support</div>
             </div>
           </div>
         </div>

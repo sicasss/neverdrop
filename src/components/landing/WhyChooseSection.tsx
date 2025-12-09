@@ -1,24 +1,30 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Rocket, Wand2, Target } from 'lucide-react';
+import { EyeOff, Gauge, Wand2, Target } from 'lucide-react';
 
 const reasons = [
   {
-    icon: Rocket,
-    title: 'Optimized Performance',
-    description: 'Experience buttery-smooth gameplay with our advanced performance optimizations. NeverDrop is designed to squeeze every last frame from your system.',
+    icon: EyeOff,
+    title: 'Never Get Detected',
+    description: 'Partnered with WhisperWind, we have advanced bypass methods that ensure you will never get caught. Optional bypass package available for extra security.',
+    features: ['WhisperWind integration', 'Anti-detection system', 'Screenshare safe']
+  },
+  {
+    icon: Gauge,
+    title: 'Improved Performance',
+    description: 'Play with minimal lag and less strain on your system. NeverDrop is optimized to squeeze every last frame from your hardware.',
     features: ['Higher FPS', 'Lower latency', 'Reduced stuttering']
   },
   {
     icon: Wand2,
-    title: 'High Customization',
-    description: 'Make Minecraft truly yours with extensive customization options. From visual tweaks to control configurations, everything is adjustable.',
-    features: ['Custom themes', 'Adjustable UI', 'Personal presets']
+    title: 'Total Customization',
+    description: 'Adjust settings to fit your unique style and needs for a more personalized experience. Every module is fully configurable.',
+    features: ['Custom themes', 'Adjustable modules', 'Personal presets']
   },
   {
     icon: Target,
-    title: 'Built for Competitive Playstyles',
-    description: 'Designed with competitive players in mind. Every feature is crafted to enhance your gameplay without providing unfair advantages.',
-    features: ['Fair play focused', 'Tournament ready', 'Anti-cheat safe']
+    title: 'Built for Competitive Players',
+    description: 'Access optimization tools that enhance gameplay with advanced combat, movement, and overall performance improvements.',
+    features: ['Combat modules', 'Movement enhancements', 'PvP optimization']
   }
 ];
 
@@ -37,19 +43,19 @@ export const WhyChooseSection = () => {
             Why Choose <span className="text-primary">NeverDrop</span>?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Three core pillars that make NeverDrop the choice of competitive players.
+            Four core pillars that make NeverDrop the choice of competitive players.
           </p>
         </div>
 
         {/* Reasons */}
-        <div ref={ref} className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {reasons.map((reason, index) => (
             <div
               key={reason.title}
               className={`group relative transition-all duration-700 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
-              style={{ transitionDelay: `${index * 200}ms` }}
+              style={{ transitionDelay: `${index * 150}ms` }}
             >
               {/* Card */}
               <div className="relative h-full p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-500 overflow-hidden">

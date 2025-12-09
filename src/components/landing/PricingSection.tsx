@@ -11,13 +11,13 @@ const plans = [
     price: '$7',
     duration: '1 month access',
     features: [
-      'Full NeverDrop features',
-      'Performance optimizations',
-      'Visual customization suite',
+      'Full NeverDrop modules',
+      'Combat & movement tools',
+      'Visual customization',
       'Discord support',
       'All updates included'
     ],
-    cta: 'Get 1 Month',
+    cta: 'Buy 1 Month',
     icon: Clock,
     featured: false
   },
@@ -28,14 +28,14 @@ const plans = [
     duration: '3 months access',
     savings: 'Save $6',
     features: [
-      'Full NeverDrop features',
-      'Performance optimizations',
-      'Visual customization suite',
+      'Full NeverDrop modules',
+      'Combat & movement tools',
+      'Visual customization',
       'Priority Discord support',
       'All updates included',
       'Exclusive presets'
     ],
-    cta: 'Get 3 Months',
+    cta: 'Buy 3 Months',
     icon: Calendar,
     featured: false
   },
@@ -46,15 +46,15 @@ const plans = [
     duration: 'Forever',
     savings: 'Best Deal',
     features: [
-      'Full NeverDrop features',
-      'Performance optimizations',
-      'Visual customization suite',
+      'Full NeverDrop modules',
+      'Combat & movement tools',
+      'Visual customization',
       'Priority Discord support',
       'Lifetime updates',
       'Exclusive presets & themes',
       'Early access to new features'
     ],
-    cta: 'Get Permanent',
+    cta: 'Buy Permanent',
     icon: Crown,
     featured: true
   }
