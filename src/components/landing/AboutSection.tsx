@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { Zap, Shield, Cpu } from 'lucide-react';
+import { Zap, EyeOff, Cpu } from 'lucide-react';
 
 export const AboutSection = () => {
   const { ref, isVisible } = useScrollAnimation(0.2);
@@ -15,19 +15,20 @@ export const AboutSection = () => {
         >
           {/* Section label */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-6">
-            <span className="text-xs uppercase tracking-wider text-primary font-medium">About the Mod</span>
+            <span className="text-xs uppercase tracking-wider text-primary font-medium">About NeverDrop</span>
           </div>
 
           {/* Main heading */}
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Performance Meets <span className="text-primary">Customization</span>
+            Power Meets <span className="text-primary">Stealth</span>
           </h2>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-12">
-            NeverDrop es un mod centrado en la eficiencia, rendimiento y personalización visual. 
-            Está optimizado para integrarse perfectamente con <span className="text-foreground font-medium">Lunar Client</span> sin 
-            añadir peso innecesario al sistema. Diseñado por jugadores, para jugadores.
+            NeverDrop is a <span className="text-foreground font-medium">ghost client</span> specifically optimized for 
+            <span className="text-foreground font-medium"> Minecraft 1.8.9</span>, designed exclusively to work with 
+            <span className="text-foreground font-medium"> Lunar Client</span>. Packed with a wide variety of modules and 
+            advanced features, NeverDrop delivers a lightweight yet powerful experience for competitive players.
           </p>
 
           {/* Feature highlights */}
@@ -36,17 +37,17 @@ export const AboutSection = () => {
               {
                 icon: Zap,
                 title: 'Lightweight',
-                description: 'Minimal resource usage for maximum FPS'
+                description: 'Minimal resource usage for maximum performance'
               },
               {
-                icon: Shield,
-                title: 'Safe & Secure',
-                description: 'No game-breaking modifications'
+                icon: EyeOff,
+                title: 'Undetectable',
+                description: 'Advanced bypass methods powered by WhisperWind'
               },
               {
                 icon: Cpu,
-                title: 'Optimized',
-                description: 'Built for competitive gameplay'
+                title: 'Powerful',
+                description: 'Advanced modules for combat, movement & more'
               }
             ].map((item, index) => (
               <div

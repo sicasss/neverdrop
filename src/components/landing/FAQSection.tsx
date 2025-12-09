@@ -2,38 +2,44 @@ import { useState } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { ChevronDown, HelpCircle } from 'lucide-react';
 
+const DISCORD_LINK = 'https://discord.gg/KMCbAgGM78';
+
 const faqs = [
   {
+    question: 'What is NeverDrop?',
+    answer: 'NeverDrop is a ghost client specifically optimized for Minecraft 1.8.9, designed exclusively to work with Lunar Client. It includes advanced modules for combat, movement, and visual customization while remaining lightweight and undetectable.'
+  },
+  {
     question: 'Is NeverDrop safe to use with Lunar Client?',
-    answer: 'Yes! NeverDrop is specifically designed for Lunar Client compatibility. It has been thoroughly tested to ensure it works seamlessly without causing any conflicts or issues with the client.'
+    answer: 'Yes! NeverDrop is specifically designed for full compatibility with Lunar Client. It has been thoroughly tested to ensure smooth, optimized performance without causing any conflicts or issues.'
   },
   {
-    question: 'Will NeverDrop get me banned on servers?',
-    answer: 'NeverDrop focuses purely on performance optimization and visual customization. It does not provide any unfair gameplay advantages and is designed to be anti-cheat safe. However, always check individual server rules.'
+    question: 'Will I get detected using NeverDrop?',
+    answer: 'NeverDrop is partnered with WhisperWind and features advanced bypass methods to ensure you stay undetected. For extra security, we offer bypass packages that provide additional protection during screenshares.'
   },
   {
-    question: 'Does NeverDrop work with Minecraft 1.8.9 only?',
+    question: 'Does NeverDrop work with other Minecraft versions?',
     answer: 'Currently, NeverDrop is optimized specifically for Minecraft 1.8.9, which is the most popular version for competitive PvP. We focus on this version to provide the best possible experience.'
   },
   {
-    question: 'How do I install NeverDrop?',
-    answer: 'After downloading from our Discord server, simply place the mod file in your Lunar Client mods folder. Detailed installation instructions are provided in our Discord community.'
+    question: 'How do I purchase and install NeverDrop?',
+    answer: 'All purchases are made through our Discord server. After buying, you will receive download instructions and access to the mod files. Our community is available to help with any installation questions.'
   },
   {
-    question: 'What\'s the difference between Lite and Premium?',
-    answer: 'The Lite version includes core performance optimizations and basic customizations. Premium unlocks advanced tools, exclusive themes, priority support, and lifetime updates with early access to new features.'
+    question: "What's included in my purchase?",
+    answer: 'All plans include full access to NeverDrop features, performance optimizations, visual customization, and Discord support. Longer plans include priority support, exclusive presets, and early access to new features.'
   },
   {
-    question: 'How can I get support if I have issues?',
-    answer: 'Join our Discord server for community support. Premium users get access to priority support channels with faster response times from our team.'
+    question: 'Do plans auto-renew?',
+    answer: 'No! All our plans are one-time purchases. There are no subscriptions or auto-renewals. You pay once and enjoy access for the duration of your chosen plan.'
   },
   {
     question: 'Are updates included after purchase?',
-    answer: 'Premium is a one-time purchase that includes lifetime updates. You\'ll always have access to the latest version of NeverDrop.'
+    answer: 'Yes! All updates during your plan duration are included. The Permanent plan includes lifetime updates, so you will always have access to the latest version of NeverDrop.'
   },
   {
-    question: 'Can I request new features?',
-    answer: 'Absolutely! We actively listen to our community. Join our Discord and share your suggestions in the feature request channel. Many of our features came from user feedback.'
+    question: 'How can I get support if I have issues?',
+    answer: 'Join our Discord server for community support. Premium and Permanent plan users get access to priority support channels with faster response times from our team.'
   }
 ];
 
@@ -114,7 +120,7 @@ export const FAQSection = () => {
             Still have questions?
           </p>
           <a
-            href="https://discord.gg/your-server"
+            href={DISCORD_LINK}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary/10 border border-primary/20 text-primary hover:bg-primary/20 transition-colors"
