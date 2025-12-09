@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Download } from 'lucide-react';
+import { Menu, X, ShoppingCart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const navLinks = [
@@ -7,7 +7,7 @@ const navLinks = [
   { href: '#features', label: 'Features' },
   { href: '#why', label: 'Why NeverDrop' },
   { href: '#screenshots', label: 'Preview' },
-  { href: '#pricing', label: 'Download' },
+  { href: '#pricing', label: 'Pricing' },
   { href: '#faq', label: 'FAQ' },
 ];
 
@@ -70,8 +70,8 @@ export const Navbar = () => {
               onClick={() => scrollToSection('#pricing')}
               className="bg-primary hover:bg-primary/90 text-primary-foreground glow-border-hover transition-all duration-300"
             >
-              <Download className="w-4 h-4 mr-2" />
-              Download
+              <ShoppingCart className="w-4 h-4 mr-2" />
+              Purchase
             </Button>
           </div>
 
@@ -101,8 +101,8 @@ export const Navbar = () => {
                 onClick={() => scrollToSection('#pricing')}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground mt-2"
               >
-                <Download className="w-4 h-4 mr-2" />
-                Download
+                <ShoppingCart className="w-4 h-4 mr-2" />
+                Purchase
               </Button>
             </div>
           </div>
