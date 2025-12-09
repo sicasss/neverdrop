@@ -37,7 +37,7 @@ const plans = [
     ],
     cta: 'Get 3 Months',
     icon: Calendar,
-    featured: true
+    featured: false
   },
   {
     name: 'Permanent',
@@ -56,7 +56,7 @@ const plans = [
     ],
     cta: 'Get Permanent',
     icon: Crown,
-    featured: false
+    featured: true
   }
 ];
 
